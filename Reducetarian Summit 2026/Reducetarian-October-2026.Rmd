@@ -1,0 +1,138 @@
+---
+title: "Academic work can & should be embedded in a viable theory of change"
+author: "Seth Green"
+institute: "Humane & Sustainable Food Lab, Stanford University"
+date: "Reducetarian Summit, October 2026, Raleigh, NC"
+output:
+  beamer_presentation:
+    slide_level: 2
+    keep_tex: false
+    includes:
+      in_header: preamble.tex
+    highlight: tango
+    latex_engine: lualatex
+classoption: "aspectratio=169"
+urlcolor: blue
+linkcolor: blue
+---
+
+```{r setup, include=FALSE}
+# requires the foodlabslides package: https://github.com/setgree/HSFL-slides
+# remotes::install_github("setgree/HSFL-slides")
+pkg_resources <- system.file("rmarkdown/templates/foodlab_presentation",
+                             package = "foodlabslides")
+
+# local theme uses the Oct 2025 Reducetarian footer (narrow bars, 0.6cm logo), so don't overwrite it
+theme_file <- file.path(pkg_resources, "resources/beamerthemeFoodLab.sty")
+if (file.exists(theme_file) && !file.exists("beamerthemeFoodLab.sty")) {
+  file.copy(theme_file, "beamerthemeFoodLab.sty", overwrite = FALSE)
+}
+
+preamble_file <- file.path(pkg_resources, "skeleton/preamble.tex")
+if (file.exists(preamble_file) && !file.exists("preamble.tex")) {
+  file.copy(preamble_file, "preamble.tex", overwrite = FALSE)
+}
+
+logo_file <- file.path(pkg_resources, "skeleton/foodlab-logo.png")
+if (file.exists(logo_file)) {
+  file.copy(logo_file, "foodlab-logo.png", overwrite = TRUE)
+}
+
+# Emoji are drawn via temp PNGs in luatex.* folders; Dropbox sometimes keeps
+# them around after the build, so clear them out each knit
+unlink(Sys.glob("luatex.*"), recursive = TRUE)
+
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Background: nothing consistently works {.t}
+
+Last year I presented a [meta-analysis](https://doi.org/10.1016/j.appet.2025.108233) of interventions intended to reduce consumption of meat and animal products. Basically nothing works :(
+
+::::: columns
+::: {.column width="52%"}
+\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{images/appetite-meta.png}
+:::
+
+::: {.column width="48%"}
+\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{images/appetite-main-results.png}
+:::
+:::::
+
+## Since then: {.t}
+
+::::: columns
+::: {.column width="50%"}
+[TACOS](https://doi.org/10.1016/j.foodqual.2026.105931): adding plant-based options to a Chipotle-like menu cut meat by \~1 pp. per option
+
+\includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{images/tacos-paper-title.png}
+:::
+
+::: {.column width="50%"}
+PALATE: adding alt proteins to seven real restaurants did not reduce meat purchases
+
+\includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{images/palate-title-abstract.png}
+:::
+:::::
+
+## Studies I'm working on now {.t}
+
+::::: columns
+::: {.column width="60%"}
+\small\vspace{-0.8em}
+
+- Does a plant-based lunch cause rebound/reinforcement effects?
+  - No
+- Can telling people about the small animal replacement problem make them endorse paying more for higher welfare meat?
+  - IDK
+  - BTW Brian this is definitely reducetarian in spirit because higher welfare -\> higher prices -\> lower welfare
+- With Greener by Default: which plant-based default works best? (We vary the design and also whether you get nagged about the environment or inclusivity)
+  - IDK
+:::
+
+::: {.column width="40%"}
+\vspace{1.5em}
+
+\includegraphics[width=\linewidth, height=0.75\textheight, keepaspectratio]{images/rebound-meat-intake.png}
+:::
+:::::
+
+::: notes
+- Rebound study with Natalia Lawrence: does giving people a plant-based meal at time one cause them to eat more meat the following week?
+- Consider the Chicken: trying to get people to care more about chickens by exposing them to arguments about the small animal replacement problem. Switching from beef to chicken trades a tough life for one cow for an awful life for around 100 chickens (Kelsey Piper, Vox, 2021).
+- With Greener by Default: designing and testing different kinds of plant-based defaults.
+:::
+
+## My theory of change (why I do this work)
+
+1.  Everybody knows reducing meat consumption is really hard. But in academia land you get the sense that we're right on the cusp of solving it thanks to our novel and clever theories of human behavior. I absolutely hate this
+    - It wastes advocates' time and energy
+    - A lot of what I write at <https://regressiontothemeat.substack.com/> is just "you should not take research at face value"
+2.  Animal advocacy has an [evidence problem](https://forum.effectivealtruism.org/posts/svjqgyFuFQ34qSgmw/animal-welfare-has-an-evidence-problem) across many domains
+    - Donors feel they need to make decisions anyway, so they build these big complicated models on weak foundations. I want to improve those foundations
+3.  Show that this work is inherently interesting, spur development of academic field, attract attention of high-status people across fields, etc.
+    - Talk to Bob Fischer and Kevin Kuruc for the econ-specific version
+
+## I don't understand the theory of change behind most meat reduction papers
+
+- I'm thinking especially of papers arguing that veganism is ethical, it's OK to make people eat a vegetarian meal, etc. To me this question is uninteresting because veganism is solved the way checkers is solved 🤷
+
+  - [Rachels (2011)](https://spot.colorado.edu/~heathwoo/1200hSP20/Rachels,%20Stuart%20(2014)%20-%20'Vegetarianism'%20from%20The%20Oxford%20Handbook%20of%20Animal%20Ethics.pdf): "The philosophical arguments for vegetarianism are easy. What's hard is getting people to stop eating meat."
+  - But also social psych papers looking to change attitudes towards animals. The link to subsequent behavioral change is "Phase 2: ?"
+
+- Cynical take: a PhD is a big hammer. You spend seven years getting it and then you start swinging it. This feels like you've aligned your work and your values. But the other parts of the TOC, after you write your paper, merit scrutiny.
+
+::: notes
+- That's not to say a theory of change doesn't exist just because I don't understand it.
+- Cynical interpretation of why so much academic w ork doesn't connect to anything realistic: graduate school hands you a gigantic hammer (your PhD in linguistic analysis, philosophy, whatever), and from then on you see nails. You care about veganism and want your work connected to your values, so you start banging everything with the hammer.
+- Drunk searching for his keys where the light is. It's the hammer you have; it doesn't necessarily make sense for the problem of veganism.
+- Philosophy in particular: hard to imagine one more philosophy paper, especially in the language of academic philosophy rather than plain language, meaningfully changing anyone's consumption. If it did, we would see evidence of it in studies. Maybe philosophers need to do that kind of work so other people can make sense of it.
+- Or you can try to show that veganism is an interesting case of something else, but again, not so sure.
+:::
+
+## I'm actually asking: what is your theory of change?
+
+- Sorry if this is mean, and also the fact that I don't get it doesn't mean much
+- I actually want to know from other researchers: If you want someone to take your work and run with it, what does that look like? Who would it be?
+- If you think your question is interesting, what is it a case of? (What broader phenomenon are you hoping to illuminate?)
+- Thanks!
