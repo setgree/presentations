@@ -21,9 +21,10 @@ linkcolor: blue
 pkg_resources <- system.file("rmarkdown/templates/foodlab_presentation",
                              package = "foodlabslides")
 
+# local theme uses the Oct 2025 Reducetarian footer (narrow bars, 0.6cm logo), so don't overwrite it
 theme_file <- file.path(pkg_resources, "resources/beamerthemeFoodLab.sty")
-if (file.exists(theme_file)) {
-  file.copy(theme_file, "beamerthemeFoodLab.sty", overwrite = TRUE)
+if (file.exists(theme_file) && !file.exists("beamerthemeFoodLab.sty")) {
+  file.copy(theme_file, "beamerthemeFoodLab.sty", overwrite = FALSE)
 }
 
 preamble_file <- file.path(pkg_resources, "skeleton/preamble.tex")
