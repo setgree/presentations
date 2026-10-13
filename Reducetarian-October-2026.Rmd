@@ -113,14 +113,14 @@ PALATE: adding alt proteins to seven real restaurants did not reduce meat purcha
 3.  Show that this work is inherently interesting, spur development of academic field, attract attention of high-status people across fields, etc.
     - Talk to Bob Fischer and Kevin Kuruc for the econ-specific version
 
-## I don't understand the theory of change behind most meat reduction/abolition research papers
+## I don't understand the theory of change behind most meat reduction papers
 
-- I'm thinking especially of papers arguing that veganism is ethical, it's OK to make people eat a vegetarian meal, etc. To me this question is **uninteresting** because veganism is solved the way checkers is solved 🤷
+- I'm thinking especially of papers arguing that veganism is ethical, it's OK to make people eat a vegetarian meal, etc. To me this question is uninteresting because veganism is solved the way checkers is solved 🤷
 
-  - [Rachels (2011)](https://spot.colorado.edu/~heathwoo/1200hSP20/Rachels,%20Stuart%20(2014)%20-%20'Vegetarianism'%20from%20The%20Oxford%20Handbook%20of%20Animal%20Ethics.pdf): The philosophical arguments for vegetarianism are easy. What's hard is getting people to stop eating meat
-  - But also social psych papers looking to change attitudes towards animals. The link to subsequent behavioral change is "Step 2: ???"
+  - [Rachels (2011)](https://spot.colorado.edu/~heathwoo/1200hSP20/Rachels,%20Stuart%20(2014)%20-%20'Vegetarianism'%20from%20The%20Oxford%20Handbook%20of%20Animal%20Ethics.pdf): "The philosophical arguments for vegetarianism are easy. What's hard is getting people to stop eating meat."
+  - But also social psych papers looking to change attitudes towards animals. The link to subsequent behavioral change is "Phase 2: ?"
 
-- Cynical take: a PhD is a big hammer. You spend seven years getting it and then you start swinging it. This *feels* like you're using you've aligned your work and your values. But the other parts of the TOC, after you write your paper, deserve some scrutiny. Some kinds of papers are better suited for next steps than others
+- Cynical take: a PhD is a big hammer. You spend seven years getting it and then you start swinging it. This feels like you've aligned your work and your values. But the other parts of the TOC, after you write your paper, merit scrutiny.
 
 ::: notes
 - That's not to say a theory of change doesn't exist just because I don't understand it.
