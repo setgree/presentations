@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.Ruserdata
+.DS_Store
+Icon*
+*.aux
+*.log
+*.out
+*.blg
+*.spl
+notes.txt
