@@ -1,0 +1,125 @@
+---
+title: "Academic work should be embedded in a viable theory of change"
+author: "Seth Green"
+institute: "Stanford"
+date: "Reducetarian Summit, October 2026, Raleigh, NC"
+output:
+  beamer_presentation:
+    slide_level: 2
+    keep_tex: false
+    includes:
+      in_header: preamble.tex
+    highlight: tango
+classoption: "aspectratio=169"
+urlcolor: blue
+linkcolor: blue
+---
+
+```{r setup, include=FALSE}
+# requires the foodlabslides package: https://github.com/setgree/HSFL-slides
+# remotes::install_github("setgree/HSFL-slides")
+pkg_resources <- system.file("rmarkdown/templates/foodlab_presentation",
+                             package = "foodlabslides")
+
+theme_file <- file.path(pkg_resources, "resources/beamerthemeFoodLab.sty")
+if (file.exists(theme_file)) {
+  file.copy(theme_file, "beamerthemeFoodLab.sty", overwrite = TRUE)
+}
+
+preamble_file <- file.path(pkg_resources, "skeleton/preamble.tex")
+if (file.exists(preamble_file) && !file.exists("preamble.tex")) {
+  file.copy(preamble_file, "preamble.tex", overwrite = FALSE)
+}
+
+logo_file <- file.path(pkg_resources, "skeleton/foodlab-logo.png")
+if (file.exists(logo_file)) {
+  file.copy(logo_file, "foodlab-logo.png", overwrite = TRUE)
+}
+
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Background: nothing consistently works
+
+::::: columns
+::: {.column width="40%"}
+- Last year I presented a [meta-analysis](https://doi.org/10.1016/j.appet.2025.108233) of interventions intended to reduce consumption of meat and animal products
+- We found that basically nothing works
+:::
+
+::: {.column width="60%"}
+\includegraphics[width=\linewidth, height=0.4\textheight, keepaspectratio]{images/appetite-meta.png}
+
+\includegraphics[width=\linewidth, height=0.4\textheight, keepaspectratio]{images/appetite-main-results.png}
+:::
+:::::
+
+## Since then I have done:
+
+- [TACOS](https://doi.org/10.1016/j.foodqual.2026.105931): adding plant-based options to a menu
+- PALATE: adding alt proteins to real restaurants
+- [anything else?]
+
+## TACOS: adding plant-based options to a menu
+
+::::: columns
+::: {.column width="40%"}
+- Online RCT, 4,431 US adults
+- Chipotle menu with zero, one, or two meat analogues
+- ~1 pp. less meat per analogue
+- [Hope et al. 2026](https://doi.org/10.1016/j.foodqual.2026.105931)
+:::
+
+::: {.column width="60%"}
+\includegraphics[width=\linewidth, height=0.4\textheight, keepaspectratio]{images/tacos-paper-title.png}
+
+\includegraphics[width=\linewidth, height=0.4\textheight, keepaspectratio]{images/preprint-fig.png}
+:::
+:::::
+
+## PALATE: better alternatives, same orders
+
+::::: columns
+::: {.column width="40%"}
+- 1.2 million transactions, seven restaurants, eight years
+- Adding modern alt proteins did not reduce meat purchases
+- 63 preregistered tests, overwhelmingly null
+:::
+
+::: {.column width="60%"}
+[PALATE screenshots go here]
+:::
+:::::
+
+## My theory of change
+
+1. A lot of academic research is really rosy and unrealistic, and I hate that
+2. Animal advocacy has an [evidence problem](https://forum.effectivealtruism.org/posts/svjqgyFuFQ34qSgmw/animal-welfare-has-an-evidence-problem)
+3. Help donors invest based on evidence, not complicated models with weak foundations
+4. Show that this work is inherently interesting
+
+::: notes
+3. We hope to help donors make more effective investment decisions based on evidence rather than complicated models with weak foundations.
+4. We hope to demonstrate that this kind of work is inherently interesting, so as to spur other academics to do it: veganism as a case of an interesting psychological phenomenon.
+:::
+
+## So... what's *your* theory of change?
+
+- I often can't tell what theory of change a paper on reducing meat consumption is embedded in
+- Cynical take: a PhD is a hammer, so everything looks like a nail
+- "The philosophical arguments for vegetarianism are easy. What's hard is getting people to stop eating meat." ([Rachels 2011](https://spot.colorado.edu/~heathwoo/1200hSP20/Rachels,%20Stuart%20(2014)%20-%20'Vegetarianism'%20from%20The%20Oxford%20Handbook%20of%20Animal%20Ethics.pdf))
+
+::: notes
+- That's not to say a theory of change doesn't exist just because I don't understand it.
+- Cynical interpretation of why so much academic work doesn't connect to anything realistic: graduate school hands you a gigantic hammer (your PhD in linguistic analysis, philosophy, whatever), and from then on you see nails. You care about veganism and want your work connected to your values, so you start banging everything with the hammer.
+- Drunk searching for his keys where the light is. It's the hammer you have; it doesn't necessarily make sense for the problem of veganism.
+- Philosophy in particular: hard to imagine one more philosophy paper, especially in the language of academic philosophy rather than plain language, meaningfully changing anyone's consumption. If it did, we would see evidence of it in studies. Maybe philosophers need to do that kind of work so other people can make sense of it.
+- Or you can try to show that veganism is an interesting case of something else, but again, not so sure.
+:::
+
+## I'm actually asking: what is your theory of change?
+
+- How do you hope your work is received?
+- How do you hope people understand it?
+- If you think the question is interesting: what do you mean by interesting?
+- Thanks!
