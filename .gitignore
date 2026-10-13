@@ -1,0 +1,19 @@
+# The slide template is its own repo (setgree/HSFL-slides) so install_github works
+HSFL-slides/
+
+# Other people's slides, kept for reference only
+OPP (other people's presentations)/
+
+# R / RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Build outputs and LaTeX leftovers
+*.pdf
+*.aux
+*.log
+luatex.*/
+
+.DS_Store
