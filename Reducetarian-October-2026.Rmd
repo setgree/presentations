@@ -99,6 +99,7 @@ PALATE: adding alt proteins to seven real restaurants did not reduce meat purcha
 ## My theory of change
 
 1. A lot of academic research is really rosy and unrealistic, and I hate that
+    - This can waste a lot of people's time and energy if they take it at face value and don't add a big discount for publication bias, p-hacking, etc.
 2. Animal advocacy has an [evidence problem](https://forum.effectivealtruism.org/posts/svjqgyFuFQ34qSgmw/animal-welfare-has-an-evidence-problem)
 3. Help donors invest based on evidence, not complicated models with weak foundations
 4. Show that this work is inherently interesting
