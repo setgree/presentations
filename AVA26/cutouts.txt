@@ -1,0 +1,17 @@
+## Recent paper that introduces plant-based alternatives
+
+::::: columns
+::: {.column width="50%"}
+\begin{minipage}[c][0.72\textheight][c]{\linewidth}
+\centering
+\includegraphics[width=\linewidth, height=0.68\textheight, keepaspectratio]{images/tacos-paper-title.png}
+\end{minipage}
+:::
+
+::: {.column width="50%"}
+\begin{minipage}[c][0.72\textheight][c]{\linewidth}
+\centering
+\includegraphics[width=\linewidth, height=0.68\textheight, keepaspectratio]{images/preprint-fig.png}
+\end{minipage}
+:::
+:::::

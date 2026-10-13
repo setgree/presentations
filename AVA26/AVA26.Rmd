@@ -1,0 +1,175 @@
+---
+title: "In favor of weird, exploratory vegan research"
+author: "Seth Green"
+institute: "Humane & Sustainable Food Lab, Stanford University"
+date: "May 22, 2026"
+output:
+  beamer_presentation:
+    slide_level: 2
+    keep_tex: false
+    includes:
+      in_header: preamble.tex
+    highlight: tango
+classoption: "aspectratio=169"
+urlcolor: blue
+linkcolor: blue
+---
+
+```{r setup, include=FALSE}
+# requires the foodlabslides package: https://github.com/setgree/HSFL-slides
+# remotes::install_github("setgree/HSFL-slides")
+pkg_resources <- system.file("rmarkdown/templates/foodlab_presentation",
+                             package = "foodlabslides")
+
+theme_file <- file.path(pkg_resources, "resources/beamerthemeFoodLab.sty")
+if (file.exists(theme_file)) {
+  file.copy(theme_file, "beamerthemeFoodLab.sty", overwrite = TRUE)
+}
+
+preamble_file <- file.path(pkg_resources, "skeleton/preamble.tex")
+if (file.exists(preamble_file) && !file.exists("preamble.tex")) {
+  file.copy(preamble_file, "preamble.tex", overwrite = FALSE)
+}
+
+logo_file <- file.path(pkg_resources, "skeleton/foodlab-logo.png")
+if (file.exists(logo_file)) {
+  file.copy(logo_file, "foodlab-logo.png", overwrite = TRUE)
+}
+
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## HSFL overview
+
+::::: columns
+::: {.column width="52%"}
+\includegraphics[width=\linewidth, height=0.68\textheight, keepaspectratio]{images/foodlabstanford-homepage.png}
+:::
+
+::: {.column width="48%"}
+- Hi, I'm Seth, I'm a research scientist at the Humane & Sustainable Food Lab at Stanford ([foodlabstanford.com](https://www.foodlabstanford.com/))
+- The lab was started in early 2023 to accelerate the end of factory farming
+- I joined July 2024, I write meta-analyses (and [a Substack](https://regressiontothemeat.substack.com/)) and run experiments
+:::
+:::::
+
+## Meaningfully reducing MAP consumption is hard
+
+::::: columns
+::: {.column width="50%"}
+![](images/appetite-meta.png){width="100%"}
+:::
+
+::: {.column width="50%"}
+- My first project was a [meta-analysis](https://doi.org/10.1016/j.appet.2025.108233) of interventions to reduce consumption of meat and animal products (MAP)
+- "But what do the good studies say??" which meant only RCTs, $\geq$ 25 per arm, direct consumption measure, & $\geq$ 1 day follow-up
+- This winnows thousands of papers down to 35 (41 studies and 112 interventions)
+:::
+:::::
+
+## What was tried?
+
+::::: columns
+::: {.column width="50%"}
+\includegraphics[width=\linewidth]{images/appetite-main-results.png}
+
+\small SMD = standardized mean difference
+:::
+
+::: {.column width="50%"}
+Main approaches:
+
+- **Persuasion**: animal welfare, environment, health
+- **Choice architecture**: defaults, plant-forward ratios (changes to the environment)
+- **Psychology**: mostly norms experiments
+
+**Overall: small, sparse effects** — generally changes of a few percentage points. Sad!
+:::
+:::::
+
+## Movement leaders reached the same conclusion
+
+::::: columns
+::: {.column width="28%"}
+![](images/MEAT.jpg){width="100%"}
+:::
+
+::: {.column width="72%"}
+- Around the same time, movement orgs (as far as I can tell) concluded persuasion wasn't working and shifted to
+  - **Defaults**: plant-forward menus at scale (e.g., universities, hospitals)
+  - **Alt proteins**: promote plant/mushroom/cultivated alternatives to meat that taste or literally are meat
+  - **Corporate & political campaigns**: cage-free & BCC commitments, gestation crate bans
+:::
+:::::
+
+## Defaults: sorry, I'm a skeptic
+
+- No defaults study met our inclusion criteria, which means we found no evidence either way on [regression to the meat](https://regressiontothemeat.substack.com/) (rebound at the next meal)
+- One post-pub study ([Ginn & Sparkman 2024](https://www.sciencedirect.com/science/article/abs/pii/S0272494423002748)) met our criteria and found + results. But also 1) noncompliance at one school 2) lower sales on default days and 3) no measures of spatial spillovers (what people who leave the default station do instead). So net effects on meat are a bit of guesswork (not a knock on the study! Just really hard to do this stuff!)
+- Prior: things don't scale up. Especially [nudges](https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA18709) but really things in general: [site selection bias](https://academic.oup.com/qje/article-abstract/130/3/1117/1933105?login=false), less [skilled/motivated administrators](https://www.aeaweb.org/articles?id=10.1257/aer.p20171115) at scale, [publication bias](https://www.pnas.org/doi/10.1073/pnas.2200300119), & [compensating behavior in the long-run](https://www.bu.edu/bulawreview/files/2023/12/STEVENSON.pdf)
+
+## Meat alternatives: also a skeptic
+
+- The meat alternatives industry is really struggling (Beyond Meat down \~97% from peak valuation). What's up with that?
+- My belief, and I hope to persuade you about this: the inability of plant-based meats to find their foothold tells you something important about the cultured meat market.
+- Big question: who's the target audience? Who's going to get on board with cultured meat who isn't already on board with *anything* available? Can you actually picture her in your mind? How many of her are there out there?
+- Survey data suggests a *lot* of resistance ([Peacock 2026](https://www.sciencedirect.com/science/article/abs/pii/S0195666325004544)).
+
+
+## Corporate/legal campaigns: Might be a bit out over our skis here
+
+::::: columns
+::: {.column width="40%"}
+\includegraphics[width=\linewidth, height=0.68\textheight, keepaspectratio]{images/kfc-chickens-out.png}
+:::
+
+::: {.column width="60%"}
+- Cage-free commitments, BCC, gestation crates, etc.
+- But companies can renege, laws can be overturned.
+- A lot of these campaigns are [aligned with public opinion](https://www.vox.com/future-perfect/488861/meat-paradox-factory-farming-animals?view_token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6InlnRldSSXAwVk0iLCJwIjoiL2Z1dHVyZS1wZXJmZWN0LzQ4ODg2MS9tZWF0LXBhcmFkb3gtZmFjdG9yeS1mYXJtaW5nLWFuaW1hbHMiLCJleHAiOjE3ODAzMjM2MjksImlhdCI6MTc3OTExNDAyOX0.ABZI3Db-3dA5FSFs2Xt9SauGz88fuHRF_r7OOTxcUss&utm_medium=gift-link), but not with a meaningful voting bloc. Americans oppose gestation crates but obviously DGAF about [Save our Bacon Act](https://farmanimalwelfare.substack.com/p/save-our-pigs) – not enough to mobilize anyway.
+- IMHO we need to move people from "factory farming is bad" to "factory farming is unacceptable."
+:::
+:::::
+
+## So where does that leave us?
+
+- I don't see defaults, alt proteins, and corporate/political campaigns getting us to a vegan world. Sorry.
+- Best case: less cruel factory farming in 50 years, but more farmed animals.
+- But I want something more transformative!!
+
+## Let's get weirder
+
+Paul Graham, [*Black Swan Farming*](https://paulgraham.com/swan.html)*:* "The best ideas look initially like bad ideas...If a good idea were obviously good, someone else would already have done it."
+
+- Startup ideas that become huge – Figma is worth more than the entire alt meat market – often seem ridiculous at the outset (Ex: a business that asks people to let strangers into their homes overnight)
+
+- Likewise, defaults, alt proteins, and campaigns all sound like good ideas. I want to hear more ideas that are like startup ideas: either bad or huge.
+
+## Weird as in "they let you do that??"
+
+::::: columns
+::: {.column width="32%"}
+\includegraphics[width=\linewidth, height=0.65\textheight, keepaspectratio]{images/fish-sauce-serving-spoon.png}
+:::
+
+::: {.column width="68%"}
+- Thai cafeterias put holes in fish sauce spoons! ([Kanchanachitra et al. 2020](https://doi.org/10.1371/journal.pone.0238642))
+- I think this would never fly in America but who cares? If it works there, great
+- Small reduction in fish sauce per person – 0.58g per bowl – but fish sauce fishes are really small so that's actually a lot of fish lives
+:::
+:::::
+
+## Or really not scalable or without any clear application
+
+- You know one cafeteria, one community really well and your idea would only work there
+  - "I can't scale this, so why bother?" How about instead let's all do something that works *locally* and [record a lot of qualitative outcomes](https://open.spotify.com/track/2U4Yi7LH63EiAf6094S087?si=a2edc8d7c7834c15) so we can [build some theory](https://regressiontothemeat.substack.com/p/moralization-even-with-clear-cut)
+- Or you might have an idea where you can't see how any advocacy group would run with it.
+  - Fine with me. Ex: I want to talk to people about fear, early childhood, and food. One on one, really listening. I can't see any way someone would take that baton from me. But it's interesting and it might generate insights and that's plenty ("*Do not trouble your hearts overmuch with thought of the road tonight*").
+
+## So what are your ideas
+
+- Esp. if you want to test them rigorously & want someone to do the IRB paperwork & coauthor the paper, I'm here for it ([setgree\@stanford.edu](mailto:setgree@stanford.edu))
+
+- Ok but seriously tell me 
+
+P.S. if you want to talk about this later, please email me 1-2 paragraphs describing your study – make sure to mention **Population**, **Intervention** (the thing you're testing), **Comparator** (who's your control group/what are they doing? Is there one?), and **Outcome** (thing you're measuring). I can help you with these if you're not sure yet.
