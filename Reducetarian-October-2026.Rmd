@@ -41,16 +41,15 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Background: nothing consistently works
 
+Last year I presented a [meta-analysis](https://doi.org/10.1016/j.appet.2025.108233) of interventions intended to reduce consumption of meat and animal products, and we found that basically nothing works.
+
 ::::: columns
-::: {.column width="40%"}
-- Last year I presented a [meta-analysis](https://doi.org/10.1016/j.appet.2025.108233) of interventions intended to reduce consumption of meat and animal products
-- We found that basically nothing works
+::: {.column width="52%"}
+\includegraphics[width=\linewidth, height=0.42\textheight, keepaspectratio]{images/appetite-meta.png}
 :::
 
-::: {.column width="60%"}
-\includegraphics[width=\linewidth, height=0.4\textheight, keepaspectratio]{images/appetite-meta.png}
-
-\includegraphics[width=\linewidth, height=0.4\textheight, keepaspectratio]{images/appetite-main-results.png}
+::: {.column width="48%"}
+\includegraphics[width=\linewidth, height=0.42\textheight, keepaspectratio]{images/appetite-main-results.png}
 :::
 :::::
 
@@ -122,9 +121,8 @@ knitr::opts_chunk$set(echo = FALSE)
 4. We hope to demonstrate that this kind of work is inherently interesting, so as to spur other academics to do it: veganism as a case of an interesting psychological phenomenon.
 :::
 
-## So... what's *your* theory of change?
+## I'm afraid I don't understand the theory of change behind most reducetarian research papers
 
-- I often can't tell what theory of change a paper on reducing meat consumption is embedded in
 - Cynical take: a PhD is a hammer, so everything looks like a nail
 - "The philosophical arguments for vegetarianism are easy. What's hard is getting people to stop eating meat." ([Rachels 2011](https://spot.colorado.edu/~heathwoo/1200hSP20/Rachels,%20Stuart%20(2014)%20-%20'Vegetarianism'%20from%20The%20Oxford%20Handbook%20of%20Animal%20Ethics.pdf))
 
