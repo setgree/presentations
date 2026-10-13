@@ -1,7 +1,7 @@
 ---
 title: "Academic work should be embedded in a viable theory of change"
 author: "Seth Green"
-institute: "Stanford"
+institute: "Humane & Sustainable Food Lab, Stanford University"
 date: "Reducetarian Summit, October 2026, Raleigh, NC"
 output:
   beamer_presentation:
@@ -39,36 +39,51 @@ if (file.exists(logo_file)) {
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Background: nothing consistently works
+## Background: nothing consistently works {.t}
 
 Last year I presented a [meta-analysis](https://doi.org/10.1016/j.appet.2025.108233) of interventions intended to reduce consumption of meat and animal products, and we found that basically nothing works.
 
 ::::: columns
 ::: {.column width="52%"}
-\includegraphics[width=\linewidth, height=0.42\textheight, keepaspectratio]{images/appetite-meta.png}
+\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{images/appetite-meta.png}
 :::
 
 ::: {.column width="48%"}
-\includegraphics[width=\linewidth, height=0.42\textheight, keepaspectratio]{images/appetite-main-results.png}
+\includegraphics[width=\linewidth, height=0.62\textheight, keepaspectratio]{images/appetite-main-results.png}
 :::
 :::::
 
-## Since then I have done:
+## Studies I've done {.t}
+
+::::: columns
+::: {.column width="50%"}
+[TACOS](https://doi.org/10.1016/j.foodqual.2026.105931): adding plant-based options to a Chipotle-like menu cut meat by ~1 pp. per option
+
+\includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{images/tacos-paper-title.png}
+:::
+
+::: {.column width="50%"}
+PALATE: adding alt proteins to seven real restaurants did not reduce meat purchases
+
+\includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{images/palate-title-abstract.png}
+:::
+:::::
+
+## Studies I'm working on {.t}
 
 ::::: columns
 ::: {.column width="45%"}
-- Two studies of adding plant-based options to menus (next slides)
 - With Natalia Lawrence: does a plant-based lunch make people eat more meat that week?
 - Can the small animal replacement problem make people care about chickens?
 - With Greener by Default: which plant-based defaults work best?
 :::
 
 ::: {.column width="55%"}
-\includegraphics[width=\linewidth, height=0.3\textheight, keepaspectratio]{images/vox-headline.png}
+\includegraphics[width=\linewidth, height=0.35\textheight, keepaspectratio]{images/vox-headline.png}
 
 \vspace{0.5em}
 
-\includegraphics[width=\linewidth, height=0.25\textheight, keepaspectratio]{images/vox-100-chickens.png}
+\includegraphics[width=\linewidth, height=0.3\textheight, keepaspectratio]{images/vox-100-chickens.png}
 :::
 :::::
 
@@ -77,37 +92,6 @@ Last year I presented a [meta-analysis](https://doi.org/10.1016/j.appet.2025.108
 - Consider the Chicken: trying to get people to care more about chickens by exposing them to arguments about the small animal replacement problem. Switching from beef to chicken trades a tough life for one cow for an awful life for around 100 chickens (Kelsey Piper, Vox, 2021).
 - With Greener by Default: designing and testing different kinds of plant-based defaults.
 :::
-
-## What about adding new plant-based options to menus?
-
-::::: columns
-::: {.column width="40%"}
-- [Online, Chipotle-like setting](https://doi.org/10.1016/j.foodqual.2026.105931)
-- Menus with zero, one (Sofritas), or two (Sofritas & Chick'nitas) plant-based options
-- ~1 pp. less meat per option
-- Each new option cuts back on other plant-based options
-:::
-
-::: {.column width="60%"}
-\includegraphics[width=\linewidth, height=0.4\textheight, keepaspectratio]{images/tacos-paper-title.png}
-
-\includegraphics[width=\linewidth, height=0.4\textheight, keepaspectratio]{images/preprint-fig.png}
-:::
-:::::
-
-## PALATE: new alternatives, same orders
-
-::::: columns
-::: {.column width="40%"}
-- 1.2 million transactions, seven restaurants, eight years
-- Adding modern alt proteins did not reduce meat purchases
-- 40 preregistered tests, overwhelmingly null
-:::
-
-::: {.column width="60%"}
-\includegraphics[width=\linewidth, height=0.68\textheight, keepaspectratio]{images/palate-title-abstract.png}
-:::
-:::::
 
 ## My theory of change
 
