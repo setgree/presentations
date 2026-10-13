@@ -56,9 +56,28 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Since then I have done:
 
-- [TACOS](https://doi.org/10.1016/j.foodqual.2026.105931): adding plant-based options to a menu
-- PALATE: adding alt proteins to real restaurants
-- [anything else?]
+::::: columns
+::: {.column width="45%"}
+- Two studies of adding plant-based options to menus (next slides)
+- With Natalia Lawrence: does a plant-based lunch make people eat more meat that week?
+- Can the small animal replacement problem make people care about chickens?
+- With Greener by Default: which plant-based defaults work best?
+:::
+
+::: {.column width="55%"}
+\includegraphics[width=\linewidth, height=0.3\textheight, keepaspectratio]{images/vox-headline.png}
+
+\vspace{0.5em}
+
+\includegraphics[width=\linewidth, height=0.25\textheight, keepaspectratio]{images/vox-100-chickens.png}
+:::
+:::::
+
+::: notes
+- Rebound study with Natalia Lawrence: does giving people a plant-based meal at time one cause them to eat more meat the following week?
+- Consider the Chicken: trying to get people to care more about chickens by exposing them to arguments about the small animal replacement problem. Switching from beef to chicken trades a tough life for one cow for an awful life for around 100 chickens (Kelsey Piper, Vox, 2021).
+- With Greener by Default: designing and testing different kinds of plant-based defaults.
+:::
 
 ## What about adding new plant-based options to menus?
 
