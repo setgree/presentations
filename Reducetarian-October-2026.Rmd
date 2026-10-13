@@ -123,7 +123,6 @@ PALATE: adding alt proteins to seven real restaurants did not reduce meat purcha
 
 ## I'm actually asking: what is your theory of change?
 
-- How do you hope your work is received?
-- How do you hope people understand it?
-- If you think the question is interesting: what do you mean by interesting?
+- Assuming you want someone to take your work and run with it, what does that look like? Who would it be?
+- If you think your question is interesting, what is it a case of? (What broader phenomenon are you hoping to illuminate?)
 - Thanks!
