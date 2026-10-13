@@ -1,5 +1,5 @@
 ---
-title: "Academic work should be embedded in a viable theory of change"
+title: "Academic work can & should be embedded in a viable theory of change"
 author: "Seth Green"
 institute: "Humane & Sustainable Food Lab, Stanford University"
 date: "Reducetarian Summit, October 2026, Raleigh, NC"
@@ -10,6 +10,7 @@ output:
     includes:
       in_header: preamble.tex
     highlight: tango
+    latex_engine: lualatex
 classoption: "aspectratio=169"
 urlcolor: blue
 linkcolor: blue
@@ -37,12 +38,16 @@ if (file.exists(logo_file)) {
   file.copy(logo_file, "foodlab-logo.png", overwrite = TRUE)
 }
 
+# Emoji are drawn via temp PNGs in luatex.* folders; Dropbox sometimes keeps
+# them around after the build, so clear them out each knit
+unlink(Sys.glob("luatex.*"), recursive = TRUE)
+
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Background: nothing consistently works {.t}
 
-Last year I presented a [meta-analysis](https://doi.org/10.1016/j.appet.2025.108233) of interventions intended to reduce consumption of meat and animal products, and we found that basically nothing works.
+Last year I presented a [meta-analysis](https://doi.org/10.1016/j.appet.2025.108233) of interventions intended to reduce consumption of meat and animal products. Basically nothing works :(
 
 ::::: columns
 ::: {.column width="52%"}
@@ -54,11 +59,11 @@ Last year I presented a [meta-analysis](https://doi.org/10.1016/j.appet.2025.108
 :::
 :::::
 
-## Studies I've done {.t}
+## Since then: {.t}
 
 ::::: columns
 ::: {.column width="50%"}
-[TACOS](https://doi.org/10.1016/j.foodqual.2026.105931): adding plant-based options to a Chipotle-like menu cut meat by ~1 pp. per option
+[TACOS](https://doi.org/10.1016/j.foodqual.2026.105931): adding plant-based options to a Chipotle-like menu cut meat by \~1 pp. per option
 
 \includegraphics[width=\linewidth, height=0.6\textheight, keepaspectratio]{images/tacos-paper-title.png}
 :::
@@ -70,23 +75,25 @@ PALATE: adding alt proteins to seven real restaurants did not reduce meat purcha
 :::
 :::::
 
-## Studies I'm working on {.t}
+## Studies I'm working on now {.t}
 
 ::::: columns
-::: {.column width="40%"}
-- Does a plant-based lunch make people eat more meat that week?
-- Can the small animal replacement problem make people care about chickens?
-- With Greener by Default: which plant-based defaults work best?
+::: {.column width="60%"}
+\small\vspace{-0.8em}
+
+- Does a plant-based lunch cause rebound/reinforcement effects?
+  - No
+- Can telling people about the small animal replacement problem make them endorse paying more for higher welfare meat?
+  - IDK
+  - BTW Brian this is definitely reducetarian in spirit because higher welfare -\> higher prices -\> lower welfare
+- With Greener by Default: which plant-based default works best? (We vary the design and also whether you get nagged about the environment or inclusivity)
+  - IDK
 :::
 
-::: {.column width="60%"}
-\includegraphics[width=\linewidth, height=0.5\textheight, keepaspectratio]{images/rebound-meat-intake.png}
+::: {.column width="40%"}
+\vspace{1.5em}
 
-\vspace{0.5em}
-
-\includegraphics[width=\linewidth, keepaspectratio]{images/vox-cow-vs-chickens.png}
-
-\centering \small (*Kelsey Piper, Vox, 2021*)
+\includegraphics[width=\linewidth, height=0.75\textheight, keepaspectratio]{images/rebound-meat-intake.png}
 :::
 :::::
 
@@ -96,27 +103,28 @@ PALATE: adding alt proteins to seven real restaurants did not reduce meat purcha
 - With Greener by Default: designing and testing different kinds of plant-based defaults.
 :::
 
-## My theory of change
+## My theory of change (why I do this work)
 
-1. A lot of academic research is really rosy and unrealistic, and I hate that
-    - This can waste a lot of people's time and energy if they take it at face value and don't add a big discount for publication bias, p-hacking, etc.
-2. Animal advocacy has an [evidence problem](https://forum.effectivealtruism.org/posts/svjqgyFuFQ34qSgmw/animal-welfare-has-an-evidence-problem)
-3. Help donors invest based on evidence, not complicated models with weak foundations
-4. Show that this work is inherently interesting
+1.  Everybody knows reducing meat consumption is really hard. But in academia land you get the sense that we're right on the cusp of solving it thanks to our novel and clever theories of human behavior. I absolutely hate this
+    - It wastes advocates' time and energy
+    - A lot of what I write at <https://regressiontothemeat.substack.com/> is just "you should not take research at face value"
+2.  Animal advocacy has an [evidence problem](https://forum.effectivealtruism.org/posts/svjqgyFuFQ34qSgmw/animal-welfare-has-an-evidence-problem) across many domains
+    - Donors feel they need to make decisions anyway, so they build these big complicated models on weak foundations. I want to improve those foundations
+3.  Show that this work is inherently interesting, spur development of academic field, attract attention of high-status people across fields, etc.
+    - Talk to Bob Fischer and Kevin Kuruc for the econ-specific version
 
-::: notes
-3. We hope to help donors make more effective investment decisions based on evidence rather than complicated models with weak foundations.
-4. We hope to demonstrate that this kind of work is inherently interesting, so as to spur other academics to do it: veganism as a case of an interesting psychological phenomenon.
-:::
+## I don't understand the theory of change behind most meat reduction/abolition research papers
 
-## I'm afraid I don't understand the theory of change behind most reducetarian research papers
+- I'm thinking especially of papers arguing that veganism is ethical, it's OK to make people eat a vegetarian meal, etc. To me this question is **uninteresting** because veganism is solved the way checkers is solved 🤷
 
-- Cynical take: a PhD is a hammer, so everything looks like a nail
-- "The philosophical arguments for vegetarianism are easy. What's hard is getting people to stop eating meat." ([Rachels 2011](https://spot.colorado.edu/~heathwoo/1200hSP20/Rachels,%20Stuart%20(2014)%20-%20'Vegetarianism'%20from%20The%20Oxford%20Handbook%20of%20Animal%20Ethics.pdf))
+  - [Rachels (2011)](https://spot.colorado.edu/~heathwoo/1200hSP20/Rachels,%20Stuart%20(2014)%20-%20'Vegetarianism'%20from%20The%20Oxford%20Handbook%20of%20Animal%20Ethics.pdf): The philosophical arguments for vegetarianism are easy. What's hard is getting people to stop eating meat
+  - But also social psych papers looking to change attitudes towards animals. The link to subsequent behavioral change is "Step 2: ???"
+
+- Cynical take: a PhD is a big hammer. You spend seven years getting it and then you start swinging it. This *feels* like you're using you've aligned your work and your values. But the other parts of the TOC, after you write your paper, deserve some scrutiny. Some kinds of papers are better suited for next steps than others
 
 ::: notes
 - That's not to say a theory of change doesn't exist just because I don't understand it.
-- Cynical interpretation of why so much academic work doesn't connect to anything realistic: graduate school hands you a gigantic hammer (your PhD in linguistic analysis, philosophy, whatever), and from then on you see nails. You care about veganism and want your work connected to your values, so you start banging everything with the hammer.
+- Cynical interpretation of why so much academic w ork doesn't connect to anything realistic: graduate school hands you a gigantic hammer (your PhD in linguistic analysis, philosophy, whatever), and from then on you see nails. You care about veganism and want your work connected to your values, so you start banging everything with the hammer.
 - Drunk searching for his keys where the light is. It's the hammer you have; it doesn't necessarily make sense for the problem of veganism.
 - Philosophy in particular: hard to imagine one more philosophy paper, especially in the language of academic philosophy rather than plain language, meaningfully changing anyone's consumption. If it did, we would see evidence of it in studies. Maybe philosophers need to do that kind of work so other people can make sense of it.
 - Or you can try to show that veganism is an interesting case of something else, but again, not so sure.
@@ -124,6 +132,7 @@ PALATE: adding alt proteins to seven real restaurants did not reduce meat purcha
 
 ## I'm actually asking: what is your theory of change?
 
-- Assuming you want someone to take your work and run with it, what does that look like? Who would it be?
+- Sorry if this is mean, and also the fact that I don't get it doesn't mean much
+- I actually want to know from other researchers: If you want someone to take your work and run with it, what does that look like? Who would it be?
 - If you think your question is interesting, what is it a case of? (What broader phenomenon are you hoping to illuminate?)
 - Thanks!

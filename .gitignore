@@ -16,8 +16,10 @@ foodlab-logo.png
 
 # System / beamer
 .DS_Store
+*.aux
 *.nav
 *.snm
+luatex.*/
 *.out
 *.toc
 .Rproj.user
