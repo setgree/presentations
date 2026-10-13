@@ -73,18 +73,20 @@ PALATE: adding alt proteins to seven real restaurants did not reduce meat purcha
 ## Studies I'm working on {.t}
 
 ::::: columns
-::: {.column width="45%"}
-- With Natalia Lawrence: does a plant-based lunch make people eat more meat that week?
+::: {.column width="40%"}
+- Does a plant-based lunch make people eat more meat that week?
 - Can the small animal replacement problem make people care about chickens?
 - With Greener by Default: which plant-based defaults work best?
 :::
 
-::: {.column width="55%"}
-\includegraphics[width=\linewidth, height=0.35\textheight, keepaspectratio]{images/vox-headline.png}
+::: {.column width="60%"}
+\includegraphics[width=\linewidth, height=0.5\textheight, keepaspectratio]{images/rebound-meat-intake.png}
 
 \vspace{0.5em}
 
-\includegraphics[width=\linewidth, height=0.3\textheight, keepaspectratio]{images/vox-100-chickens.png}
+\includegraphics[width=\linewidth, keepaspectratio]{images/vox-cow-vs-chickens.png}
+
+\centering \small (*Kelsey Piper, Vox, 2021*)
 :::
 :::::
 
