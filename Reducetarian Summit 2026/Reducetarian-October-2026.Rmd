@@ -83,7 +83,7 @@ PALATE: adding alt proteins to seven real restaurants did not reduce meat purcha
 
 - Does a plant-based lunch cause rebound/reinforcement effects?
   - No
-- Can telling people about the small animal replacement problem make them endorse paying more for higher welfare meat?
+- Does telling people about the small animal replacement problem make them endorse paying more for higher welfare meat?
   - IDK
   - BTW Brian this is definitely reducetarian in spirit because higher welfare -\> higher prices -\> lower welfare
 - With Greener by Default: which plant-based default works best? (We vary the design and also whether you get nagged about the environment or inclusivity)
@@ -105,11 +105,11 @@ PALATE: adding alt proteins to seven real restaurants did not reduce meat purcha
 
 ## My theory of change (why I do this work)
 
-1.  Everybody knows reducing meat consumption is really hard. But in academia land you get the sense that we're right on the cusp of solving it thanks to our novel and clever theories of human behavior. I absolutely hate this
-    - It wastes advocates' time and energy
+1.  Everybody knows reducing meat consumption is really hard. But a lot of papers give readers the sensethat we're right on the cusp of solving it thanks to our novel and clever theories of human behavior.
+    - I absolutely hate this. It wastes advocates' time and energy
     - A lot of what I write at <https://regressiontothemeat.substack.com/> is just "you should not take research at face value"
 2.  Animal advocacy has an [evidence problem](https://forum.effectivealtruism.org/posts/svjqgyFuFQ34qSgmw/animal-welfare-has-an-evidence-problem) across many domains
-    - Donors feel they need to make decisions anyway, so they build these big complicated models on weak foundations. I want to improve those foundations
+    - Donors (feel they) need to make decisions anyway, so they build these big complicated CEA models on weak foundations. I want to improve those foundations
 3.  Show that this work is inherently interesting, spur development of academic field, attract attention of high-status people across fields, etc.
     - Talk to Bob Fischer and Kevin Kuruc for the econ-specific version
 
@@ -132,7 +132,9 @@ PALATE: adding alt proteins to seven real restaurants did not reduce meat purcha
 
 ## I'm actually asking: what is your theory of change?
 
-- Sorry if this is mean, and also the fact that I don't get it doesn't mean much
-- I actually want to know from other researchers: If you want someone to take your work and run with it, what does that look like? Who would it be?
-- If you think your question is interesting, what is it a case of? (What broader phenomenon are you hoping to illuminate?)
+- The fact that I don't understand what you do is neither here nor there (who cares what I think)
+- But I really do want to know, if you want someone to take your work and run with it, what does that look like?
+  - Who would it be?
+- If you think your question is interesting, what is it a case of?
+  - What broader phenomenon are you hoping to illuminate?
 - Thanks!
