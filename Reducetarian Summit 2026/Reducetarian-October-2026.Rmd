@@ -45,9 +45,9 @@ unlink(Sys.glob("luatex.*"), recursive = TRUE)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Background: nothing consistently works {.t}
+## Last year I talked about a meta-analysis {.t}
 
-Last year I presented a [meta-analysis](https://doi.org/10.1016/j.appet.2025.108233) of interventions intended to reduce consumption of meat and animal products. Basically nothing works :(
+[Of interventions](https://www.sciencedirect.com/science/article/pii/S0195666325003861?via%3Dihub) intended to reduce consumption of meat and animal products. Basically nothing works :(
 
 ::::: columns
 ::: {.column width="52%"}
@@ -86,7 +86,7 @@ PALATE: adding alt proteins to seven real restaurants did not reduce meat purcha
 - Does telling people about the small animal replacement problem make them endorse paying more for higher welfare meat?
   - IDK
   - BTW Brian this is definitely reducetarian in spirit because higher welfare -\> higher prices -\> lower welfare
-- With Greener by Default: which plant-based default works best? (We vary the design and also whether you get nagged about the environment or inclusivity)
+- W/ Greener by Default: which plant-based default works best?
   - IDK
 :::
 
@@ -97,43 +97,45 @@ PALATE: adding alt proteins to seven real restaurants did not reduce meat purcha
 :::
 :::::
 
-::: notes
-- Rebound study with Natalia Lawrence: does giving people a plant-based meal at time one cause them to eat more meat the following week?
-- Consider the Chicken: trying to get people to care more about chickens by exposing them to arguments about the small animal replacement problem. Switching from beef to chicken trades a tough life for one cow for an awful life for around 100 chickens (Kelsey Piper, Vox, 2021).
-- With Greener by Default: designing and testing different kinds of plant-based defaults.
-:::
-
 ## My theory of change (why I do this work)
 
-1.  Everybody knows reducing meat consumption is really hard. But a lot of papers give readers the sensethat we're right on the cusp of solving it thanks to our novel and clever theories of human behavior.
-    - I absolutely hate this. It wastes advocates' time and energy
-    - A lot of what I write at <https://regressiontothemeat.substack.com/> is just "you should not take research at face value"
-2.  Animal advocacy has an [evidence problem](https://forum.effectivealtruism.org/posts/svjqgyFuFQ34qSgmw/animal-welfare-has-an-evidence-problem) across many domains
-    - Donors (feel they) need to make decisions anyway, so they build these big complicated CEA models on weak foundations. I want to improve those foundations
-3.  Show that this work is inherently interesting, spur development of academic field, attract attention of high-status people across fields, etc.
-    - Talk to Bob Fischer and Kevin Kuruc for the econ-specific version
+1.  I try to discover true facts that will be useful and interesting
+    - Animal advocacy has an [evidence problem](https://forum.effectivealtruism.org/posts/svjqgyFuFQ34qSgmw/animal-welfare-has-an-evidence-problem) across many domains
+    - Donors build these big complicated CEA models on weak foundations; I want to improve those foundations
+2.  A lot of papers are like 'this one weird trick will solve [pressing social problem]' and I live to fight them
+    - The point of <https://regressiontothemeat.substack.com/> is basically "you should not take (some piece of) research at face value because [publication bias/misleading presentation/mismatch between strength of evidence & strength of claim/etc.]"
+3.  If the advocates do their own evaluations they'll all say how great they are
 
-## I don't understand the theory of change behind most meat reduction papers
+## My *lab's* theory of change {.t}
 
-- I'm thinking especially of papers arguing that veganism is ethical, it's OK to make people eat a vegetarian meal, etc. To me this question is uninteresting because veganism is solved the way checkers is solved 🤷
+I actually had to think about this for a fundraising thing (inputs, outputs, outcomes, and impact):
 
-  - [Rachels (2011)](https://spot.colorado.edu/~heathwoo/1200hSP20/Rachels,%20Stuart%20(2014)%20-%20'Vegetarianism'%20from%20The%20Oxford%20Handbook%20of%20Animal%20Ethics.pdf): "The philosophical arguments for vegetarianism are easy. What's hard is getting people to stop eating meat."
-  - But also social psych papers looking to change attitudes towards animals. The link to subsequent behavioral change is "Phase 2: ?"
+\centering
 
-- Cynical take: a PhD is a big hammer. You spend seven years getting it and then you start swinging it. This feels like you've aligned your work and your values. But the other parts of the TOC, after you write your paper, merit scrutiny.
+\includegraphics[width=\linewidth, height=0.7\textheight, keepaspectratio]{images/TOC.png}
+
+## My take: if you don't articulate your TOC and design your research around it, you might default to a TOC that makes no sense
+
+1.  'Effect change within my field'
+    - This is fine if you can pull it off but it's A LOT OF WORK. Talk to Kristof/Kevin Kuruc/Bob Fischer about this
+2.  Join the vegan echo chamber
+    - Write papers like 'carnists score higher on sociopathy/RWA measures' or 'it is ethically justified to serve your colleagues a vegan meal'
+3.  'My thing definitely works and everyone should invest in it'
+    - Once you *know* the answer to the big questions, it's really hard to do research because [you're no longer searching](https://regressiontothemeat.substack.com/p/the-problem-with-politicized-research)
+    - Aesthetic objection: this profanes our sacred duty to seek truth
+    - Just go get an advocacy job instead
 
 ::: notes
 - That's not to say a theory of change doesn't exist just because I don't understand it.
-- Cynical interpretation of why so much academic w ork doesn't connect to anything realistic: graduate school hands you a gigantic hammer (your PhD in linguistic analysis, philosophy, whatever), and from then on you see nails. You care about veganism and want your work connected to your values, so you start banging everything with the hammer.
 - Drunk searching for his keys where the light is. It's the hammer you have; it doesn't necessarily make sense for the problem of veganism.
 - Philosophy in particular: hard to imagine one more philosophy paper, especially in the language of academic philosophy rather than plain language, meaningfully changing anyone's consumption. If it did, we would see evidence of it in studies. Maybe philosophers need to do that kind of work so other people can make sense of it.
 - Or you can try to show that veganism is an interesting case of something else, but again, not so sure.
 :::
 
-## I'm actually asking: what is your theory of change?
+## So what's your TOC?
 
 - The fact that I don't understand what you do is neither here nor there (who cares what I think)
-- But I really do want to know, if you want someone to take your work and run with it, what does that look like?
+- If you want someone to take your work and run with it, what does that look like?
   - Who would it be?
 - If you think your question is interesting, what is it a case of?
   - What broader phenomenon are you hoping to illuminate?

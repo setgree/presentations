@@ -4,6 +4,7 @@
 !preamble.tex
 *_files/
 AVA-26-presentation.knit.md
+*.knit.md
 
 # Copied from foodlabslides package at render time
 suppress_title.lua
