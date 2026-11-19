@@ -4,44 +4,12 @@ author: "Seth Green"
 institute: "Humane & Sustainable Food Lab, Stanford University"
 date: "Reducetarian Summit, October 2026, Raleigh, NC"
 output:
-  beamer_presentation:
-    slide_level: 2
-    keep_tex: false
-    includes:
-      in_header: preamble.tex
-    highlight: tango
-    latex_engine: lualatex
-classoption: "aspectratio=169"
-urlcolor: blue
-linkcolor: blue
+  foodlabslides::foodlab_presentation:
+    footer_url: "https://github.com/setgree/presentations/"
 ---
 
 ```{r setup, include=FALSE}
-# requires the foodlabslides package: https://github.com/setgree/HSFL-slides
-# remotes::install_github("setgree/HSFL-slides")
-pkg_resources <- system.file("rmarkdown/templates/foodlab_presentation",
-                             package = "foodlabslides")
-
-# local theme uses the Oct 2025 Reducetarian footer (narrow bars, 0.6cm logo), so don't overwrite it
-theme_file <- file.path(pkg_resources, "resources/beamerthemeFoodLab.sty")
-if (file.exists(theme_file) && !file.exists("beamerthemeFoodLab.sty")) {
-  file.copy(theme_file, "beamerthemeFoodLab.sty", overwrite = FALSE)
-}
-
-preamble_file <- file.path(pkg_resources, "skeleton/preamble.tex")
-if (file.exists(preamble_file) && !file.exists("preamble.tex")) {
-  file.copy(preamble_file, "preamble.tex", overwrite = FALSE)
-}
-
-logo_file <- file.path(pkg_resources, "skeleton/foodlab-logo.png")
-if (file.exists(logo_file)) {
-  file.copy(logo_file, "foodlab-logo.png", overwrite = TRUE)
-}
-
-# Emoji are drawn via temp PNGs in luatex.* folders; Dropbox sometimes keeps
-# them around after the build, so clear them out each knit
-unlink(Sys.glob("luatex.*"), recursive = TRUE)
-
+# requires the foodlabslides package: remotes::install_github("setgree/HSFL-slides")
 knitr::opts_chunk$set(echo = FALSE)
 ```
 

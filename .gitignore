@@ -10,10 +10,18 @@ OPP (other people's presentations)/
 .RData
 .Ruserdata
 
-# Build outputs and LaTeX leftovers
+# Build outputs and LaTeX leftovers (each deck's pdf is force-added)
 *.pdf
 *.aux
 *.log
+*.nav
+*.snm
+*.toc
+*.out
+*.tex
+!preamble.tex
+*.knit.md
+*_files/
 luatex.*/
 
 .DS_Store

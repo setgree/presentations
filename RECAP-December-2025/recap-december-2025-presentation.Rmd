@@ -13,28 +13,8 @@ classoption: "aspectratio=169"
 ---
 
 ```{r setup, include=FALSE}
-# Copy required files from package to working directory
-pkg_resources <- system.file("rmarkdown/templates/foodlab_presentation", 
-                             package = "foodlabslides")
-
-# Copy theme file
-theme_file <- file.path(pkg_resources, "resources/beamerthemeFoodLab.sty")
-if (file.exists(theme_file)) {
-  file.copy(theme_file, "beamerthemeFoodLab.sty", overwrite = TRUE)
-}
-
-# Copy preamble if not already present
-preamble_file <- file.path(pkg_resources, "skeleton/preamble.tex")
-if (file.exists(preamble_file) && !file.exists("preamble.tex")) {
-  file.copy(preamble_file, "preamble.tex", overwrite = FALSE)
-}
-
-# Copy logo file
-logo_file <- file.path(pkg_resources, "skeleton/foodlab-logo.png")
-if (file.exists(logo_file)) {
-  file.copy(logo_file, "foodlab-logo.png", overwrite = TRUE)
-}
-
+# This deck keeps its own theme, preamble and logo (the pre-October-2026 look:
+# wide footer bars, 1cm logo), so it doesn't depend on the foodlabslides package
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
